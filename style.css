@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.circle {
+  background: rgb(194, 12, 12);
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+}
+.square {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgb(117, 172, 93);
+  border-width: 10px;
+}
+.house {
+  background: white;
+  position: relative;
+}
+.square1 {
+  width: 350px;
+  height: 200px;
+  background-color: rgb(225, 221, 221);
+  display: flex;
+
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.square0 {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 2px solid purple;
+  border-width: 5px;
+  border-radius: 10px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 100px solid rgb(190, 33, 33);
+}
+
+.window {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.61);
+  -webkit-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.61);
+}
+
+.door {
+  width: 80px;
+  height: 150px;
+  background-color: black;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.door-knob {
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.heart {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  transform: rotate(45deg);
+  position: relative;
+}
+.heart::before,
+.heart::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+}
+.heart::before {
+  right: 50px;
+}
+.heart::after {
+  top: -50px;
+}
+.pentagon {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.test {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(180, 103, 167);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
